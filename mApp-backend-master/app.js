@@ -18,7 +18,7 @@ var app = express();
 
 app.use(cors());
 
-mongoose.connect("mongodb+srv://admin:0882145113za@cluster0.eab3s.mongodb.net/rmutl?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://mapp:mapp1234@mapp.2u2gb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
 
 app.use(logger('dev'));
 app.use(express.json());

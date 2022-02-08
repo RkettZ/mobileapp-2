@@ -133,7 +133,7 @@ export default {
     },
     async allCustomer() {
       try {
-        const res = await axios.get("http://localhost:3000/mongo/customers");
+        const res = await axios.get("http://localhost:3001/mongo/customers");
         this.dataCustomer = res.data;
         // console.log(this.dataCustomer);
       } catch (error) {
@@ -151,7 +151,7 @@ export default {
         // console.log(this.tel.trim());
         try {
           const res = await axios.post(
-            "http://localhost:3000/mongo/customers",
+            "http://localhost:3001/mongo/customers",
             {
               name: this.name.trim(),
               tel: this.tel.trim(),
